@@ -1,0 +1,381 @@
+:root {
+    --header-bg-color: #000;
+    --bg-color: #2F2725;
+    --link-color: #F8E27F;
+    --text-color: #fff;
+    --disable-color: #c4c4c4;
+    --ml-section-title: 20px !important;
+    --btn-height: 78px;
+    --btn-width: 320px;
+    --btn-fz: 26px;
+}
+
+/* menu background */
+.navbar-custom .navbar-brand.logo-image img {
+    width: auto;
+}
+.navbar-custom {
+    /*background-color: var(--header-bg-color);*/
+    background: none;
+}
+.navbar-custom.top-nav-collapse {
+    background-color: var(--header-bg-color);
+}
+
+/* menu bar font */
+.navbar-custom.top-nav-collapse .nav-item .nav-link,
+.navbar-custom .nav-item .nav-link {
+    font-weight: 500;
+    font-style:normal;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--link-color);
+    position: relative;
+    -webkit-transition: font-weight 0.2s;
+    transition: font-weight 0.2s;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item .nav-link.active,
+.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
+.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
+    font-weight: 700;
+    color: var(--link-color);
+}
+
+/* menu bar active state decoration */
+.navbar-custom.top-nav-collapse .nav-item .nav-link:before,
+.navbar-custom .nav-item .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 0px;
+    border-bottom: 1px solid var(--link-color);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 2px;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+.navbar-custom .nav-item .nav-link:hover:before,
+.navbar-custom .nav-item .nav-link.active:before,
+.navbar-custom.top-nav-collapse .nav-item .nav-link:hover:before,
+.navbar-custom.top-nav-collapse .nav-item .nav-link.active:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* menu bar size adjustment  */
+@media (min-width: 1200px) {
+    .navbar-custom,
+    .navbar-custom.top-nav-collapse {
+        padding-right: 150px;
+        padding-left: 170px;
+    }
+}
+.navbar-custom .nav-item .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* custom margin/padding */
+/* 頁面標題 hr 下面的間距 */
+.mb-section {
+    margin-bottom: 78px !important;
+}
+/* 服務項目行距 */
+.mb-services-content {
+    margin-bottom: 45px !important;
+}
+.mb-about-1 {
+    margin-bottom: 42px !important;
+}
+.mb-about-2 {
+    margin-bottom: 60px !important;   
+}
+.pt-contact {
+    padding-top: 50px !important;
+}
+.mr-icon {
+    margin-right: 10px !important;
+}
+/* custom image size */
+.img-value {
+    max-width: 100%;
+    height: 210px;
+}
+.img-services {
+    max-width: 100%;
+}
+
+
+/* header font */
+.header {
+    /*background: var(--header-bg-color);*/
+    background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+.header-title {
+    font-size: 60px;
+    line-height: 82px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.header-title .enlarge {
+    /*font-size: 60px;*/
+    color: var(--link-color);
+}
+.header-title.offset {
+    margin-left: 8.75rem;
+}
+.header-button {
+    background: none;
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+    padding: 1rem auto;
+    letter-spacing: 3px;
+    border-radius: 0;
+    height: 65px;
+    width: 278px;
+    font-size: 23px;
+    margin-top: 1rem;
+    opacity: 0.9;
+    transition: all 0.2s;
+}
+.header-button:hover {
+    opacity: 1.0;
+}
+
+/* section */
+.section {
+    background-color: var(--bg-color);
+    padding-top: 6.5rem;
+    padding-bottom: 4.25rem;
+}
+.section.reverse {
+    background-color: var(--link-color);
+    color: var(--header-bg-color);
+}
+.section#contact {
+    padding-bottom: 0;
+}
+.section#member {
+    padding-top: 4.5rem;
+}
+
+@media (min-width: 1200px) {
+    .section {
+        padding-bottom: 6.5rem;    
+    }
+}
+
+.section .hr {
+    border-top: 1px solid var(--link-color);
+}
+.section h2 {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 5px;
+    color: var(--text-color);
+    text-align: left;
+    margin-left: var(--ml-section-title);
+}
+
+.section.reverse .hr {
+    border-top: 1px solid var(--bg-color);
+}
+.section.reverse h2,
+.section.reverse p {
+    color: #000;
+}
+
+
+/* 核心價值 */
+.value-caption {
+    font-weight:700;
+    font-style:normal;
+    font-size:20px;
+    line-height: 2;
+    color: var(--text-color);
+    margin-top: 1.5rem;
+}
+
+.value-image {
+    max-width: 100%;
+    height: 210px;
+}
+
+/* 服務項目文字縮排 */
+.service-text {
+    padding-left: 3rem;
+}
+
+
+/* section 內文的標題 */
+.section-title {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    color: var(--link-color);
+}
+
+/* section 內文 */
+.section-content {
+    font-weight:300;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 2.25rem;
+    color: var(--text-color);
+}
+
+/* 關於我們 經營原則文字 */
+.section-content.strong {
+    color: var(--link-color);
+}
+
+/* 團隊介紹 arrow */
+.slider-1 .swiper-button-next,
+.slider-1 .swiper-button-prev {
+    background-image: none;
+}
+/* 團隊介紹 */
+.slider-1 .card-image {
+    width: 160px;
+    height: 160px;
+}
+.member-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+.member-text {
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* 聯絡我們 icon */
+#contact .icons i {
+    color: var(--link-color);
+}
+#contact a {
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.service-button {
+    background: none;
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+    padding: 1rem auto;
+    letter-spacing: 3px;
+    border-radius: 0;
+    height: var(--btn-height);
+    width: var(--btn-width);
+    font-size: var(--btn-fz);
+    transition: all 0.2s;
+}
+.service-button:hover {
+    color: var(--bg-color);
+    background-color: var(--link-color);
+    border-color: var(--link-color);
+}
+.service-button.disabled, .service-button.disabled:hover {
+    color: var(--disable-color);
+    border-color: var(--disable-color);
+    background: none;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1130px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px){
+    .navbar-custom {
+        background-color: var(--header-bg-color);
+    }
+    .header-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .header {
+        min-height: auto;
+    }
+
+    .container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .section h2 {
+        font-size: 22px;
+        line-height: 1rem;
+    }
+    .mb-section {
+        margin-bottom: 40px !important;
+    }
+    .section {
+        padding-bottom: 60px;
+        padding-top: 80px;
+    }
+    .value-caption {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #services .container {
+        text-align: center;
+    }
+    .img-services {
+        max-height: 300px;
+        margin-bottom: 20px;
+    }
+    .mb-services-content {
+        margin-bottom: 20px !important;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .section-content {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .service-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .service-button {
+        height: 60px;
+        font-size: 20px;
+    }
+    #about .section-title span:first-child {
+        display: inline-block;
+        font-size: 20px;
+    }
+    #about .section-content {
+        margin-bottom: 12px;
+    }
+    .mb-about-1 {
+        margin-bottom: 18px !important;
+    }
+    .mb-about-2 {
+        margin-bottom: 28px !important;
+    }
+    .section#member {
+        padding-top: 60px;
+    }
+    .navbar-custom.top-nav-collapse .nav-item .nav-link:before,
+    .navbar-custom .nav-item .nav-link:before{
+        display: none;
+    }
+    .copyright-text {
+        font-size: 12px;
+    }
+}
+

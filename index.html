@@ -1,22 +1,405 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>Innowealth 一諾千金</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="card">        
-        <div class="back side">
-          <h3 class="name">Innowealth Inc.</h3>
-          <div>一諾千金金融科技股份有限公司</div>      
-          <div class="info">
-            <p><span class="property">Email: </span>contact@innowealth.co</p>
-            <p><span class="property">Website: </span>innowealth.co</p>
-          </div>
-        </div>
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="description" content="提供股權型群眾募資平台、金融科普YouTube頻道">
+    <meta name="author" content="Innowealth">
+
+	<meta property="og:site_name" content="Innowealth" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content="Innowealth | 金融問題，科技解決"/>
+	<meta property="og:description" content="提供股權型群眾募資平台、金融科普YouTube頻道" />
+	<meta property="og:image" content="https://braveseed.tw/innowealth-demo/images/logo-social.jpg" />
+	<meta property="og:url" content="https://innowealth.co/" />
+	<meta property="og:type" content="article" />
+
+    <title>Innowealth | 金融問題，科技解決</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/custom.css?v=1.9.0" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147441050-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-147441050-1');
+    </script>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+            });
+        };
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="374223173297149"
+        theme_color="#2F2725"
+        logged_in_greeting="嗨！有什麼可以幫忙的嗎？"
+        logged_out_greeting="嗨！有什麼可以幫忙的嗎？">
     </div>
-  </body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image page-scroll" href="#header">
+            <img src="images/logo-horizontal.png" alt="alternative">
+        </a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#values">核心價值 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">服務項目</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#partners">合作夥伴</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">關於我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#member">團隊成員</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="header-title"><span class="enlarge">金融</span>問題，</h1>
+                        <h1 class="header-title">科技解決。</h1>
+                        <a class="page-scroll" href="#values">
+                            <button class="header-button">了解更多</button>    
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- 核心價值 -->
+    <div id="values" class="section">
+        <div class="container">
+            <div class="row mb-section">
+                <div class="col-lg-12">
+                    <h2>核心價值</h2>
+                    <hr class="hr" />
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="images/value-1.png" class="value-image" alt="創新投資，投資創新">
+                        <figcaption class="value-caption">創新投資，投資創新</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="images/value-2.png" class="img-value" alt="堅韌系統，極致體驗">
+                        <figcaption class="value-caption">堅韌系統，極致體驗</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="images/value-3.png" class="img-value" alt="公正透明，普惠共享">
+                        <figcaption class="value-caption">公正透明，普惠共享</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of 核心價值 -->
+
+    <!-- 服務項目 -->
+    <div id="services" class="section">
+        <div class="container">
+            <div class="row mb-section">
+                <div class="col-lg-12">
+                    <h2>服務項目</h2>
+                    <hr class="hr" />
+                </div>
+            </div>
+            <div class="row mb-section">
+                <div class="col-md-6">
+                    <img src="images/service-1.png" class="img-services" alt="新創公司群眾募資" />
+                </div>
+                <div class="col-md-6 service-text">
+                    <h3 class="section-title mb-services-content">新創公司群眾募資</h2>
+                    <p class="section-content mb-services-content">我們為具備高潛力的台灣新創公司，<br/>提供最優質的線上股權融資服務。</p>
+                    <button type="button" class="service-button disabled" data-toggle="tooltip" data-placement="top" title="即將推出">
+                        有種眾籌官網
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/service-2.png" class="img-services" alt="新創公司群眾募資" />
+                </div>
+                <div class="col-md-6 service-text">
+                    <h3 class="section-title mb-services-content">社群行銷業務合作</h2>
+                    <p class="section-content mb-services-content">我們對大眾提供最實用的金融知識，<br/>對企業提供最有效的業務合作。</p>
+                    <a href="https://www.youtube.com/channel/UCU2ZsR-LthOvgNzpO_2jYUQ" target="_blank">
+                        <button type="button" class="service-button mb-services-content">
+                            <i class="fab fa-youtube fa-lg mr-icon"></i>有種金融實驗室
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/braveseed.lab/" target="_blank">
+                        <button type="button" class="service-button">
+                            <i class="fab fa-instagram fa-lg mr-icon"></i>有種金融實驗室
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of 服務項目 -->
+
+    <!-- 合作夥伴 -->
+    <!-- <div id="partners" class="section reverse">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h2>合作夥伴</h2>
+                    <hr class="hr" />
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4"><img src="images/partner-placeholder.png" alt=""></div>
+                <div class="col-md-4"><img src="images/partner-placeholder.png" alt=""></div>
+                <div class="col-md-4"><img src="images/partner-placeholder.png" alt=""></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end of 合作夥伴 -->
+
+    <!-- 關於我們 -->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row mb-section">
+                <div class="col-lg-12">
+                    <h2>關於我們</h2>
+                    <hr class="hr" />
+                </div>
+            </div>
+            <div class="row mb-about-2">
+                <div class="col-lg-12">
+                    <h3 class="section-title font-weight-bold mb-about-1">Innowealth<span>是一間「金融科技」公司</span></h3>
+                    <p class="section-content">我們注重金融「協作與共榮的本質」，並以科技且貼近人性的服務重新詮釋。<br/>Innowealth 於 2019 年 7 月成立，集結了來自金融、軟體、設計等不同領域的夥伴，致力於提供從系統、視覺、社群到客服的優質體驗。</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="section-title font-weight-bold mb-about-1">經營原則</h3>
+                </div>
+                <div class="col-lg-12">
+                    <p class="section-content strong">創新：重視創新價值，從原理挖掘最佳解</p>
+                    <p class="section-content strong">互惠：我們相信只有公平與互惠方能永續</p>
+                    <p class="section-content strong mb-0">真實：堅持傳遞真實無欺詐的資訊</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of 關於我們 -->
+
+    <!-- 團隊成員 -->
+    <div id="member" class="section reverse slider-1">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h2>團隊成員</h2>
+                    <hr class="hr" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/members/howard.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="member-name">執行長 李俊毅</p>
+                                            <p class="member-text">觸覺系型男經濟學家。</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/members/douglas.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="member-name">技術長 吳岳涵</p>
+                                            <p class="member-text">模稜兩可也是一種精準。</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/members/sophy.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="member-name">執行副總 孔祥萱</p>
+                                            <p class="member-text">一切都是最好的安排。</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/members/zoe.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="member-name">業務副總 張婷瑄</p>
+                                            <p class="member-text">勇敢逐夢，築夢踏實。</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/members/akari.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="member-name">設計總監 汪岱頤</p>
+                                            <p class="member-text">一期一會。</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/members/thomas.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="member-name">創意總監 黃光英</p>
+                                            <p class="member-text">繼往開來，不忘初心。</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/members/peter.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="member-name">技術副總 陳鵬宇</p>
+                                            <p class="member-text">The higher you fly, the more you see.</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                            
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next">
+                                <i class="fas fa-chevron-right fa-2x"></i>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <i class="fas fa-chevron-left fa-2x"></i>
+                            </div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of 團隊成員 -->
+
+     <!-- 聯繫我們 -->
+    <div id="contact" class="section pt-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 icons mb-4">
+                    <a href="https://m.me/Innowealth.co" target="_blank">
+                        <i class="fab fa-facebook-messenger fa-2x"></i>
+                    </a>
+                    <a href="mailto:contact@innowealth.co">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Innowealth.co" target="_blank">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col-lg-12">
+                    <hr class="hr" />
+                    <p class="copyright-text text-center">Innowealth© All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of 聯繫我們 -->
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <!-- <script src="js/validator.min.js"></script> --> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js?v=1.1"></script> <!-- Custom scripts -->
+</body>
 </html>
