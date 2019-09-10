@@ -70,6 +70,10 @@
     transform: scaleX(1);
 }
 
+.navbar-custom .navbar-toggler {
+    color: var(--link-color);
+}
+
 /* menu bar size adjustment  */
 @media (min-width: 1200px) {
     .navbar-custom,
@@ -166,7 +170,7 @@
     padding-bottom: 0;
 }
 .section#member {
-    padding-top: 4.5rem;
+    /*padding-top: 4.5rem;*/
 }
 
 @media (min-width: 1200px) {
@@ -302,14 +306,35 @@
     .navbar-custom {
         background-color: var(--header-bg-color);
     }
+    .navbar-custom.top-nav-collapse .nav-item .nav-link:before,
+    .navbar-custom .nav-item .nav-link:before {
+        display: none;
+    }
+    .navbar-custom .nav-item .nav-link.active:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        border: none;
+        border-left: 3px solid var(--link-color);
+        top: 12px;
+        left: 25px;
+    }
+    .navbar-custom .nav-item .nav-link {
+        position: relative;
+        padding-left: 40px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
     .header-title {
         font-size: 30px;
         line-height: 35px;
     }
     .header {
-        min-height: auto;
+        background-image: url('../images/phone-background.png');
     }
-
     .container {
         padding-left: 35px;
         padding-right: 35px;
@@ -368,11 +393,7 @@
         margin-bottom: 28px !important;
     }
     .section#member {
-        padding-top: 60px;
-    }
-    .navbar-custom.top-nav-collapse .nav-item .nav-link:before,
-    .navbar-custom .nav-item .nav-link:before{
-        display: none;
+        /*padding-top: 60px;*/
     }
     .copyright-text {
         font-size: 12px;
